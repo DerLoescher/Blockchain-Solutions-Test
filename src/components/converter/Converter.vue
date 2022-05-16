@@ -1,0 +1,47 @@
+<template>
+  <div class="converter_wrapper">
+    <CurrencyConverter
+      @currencyForGraphWasSelected="currencyForGraphWasSelected"
+    />
+    <BarChart
+      v-if="currencyId"
+      :selectedRatios="selectedRatios"
+      :currencyId="this.currencyId"
+    />
+  </div>
+</template>
+
+<script>
+import CurrencyConverter from "./CurrencyConverter.vue";
+import BarChart from "./BarChart.vue";
+
+export default {
+  name: "converterBody",
+  components: {
+    CurrencyConverter,
+    BarChart,
+  },
+  data() {
+    return {
+      currencyId: "",
+    };
+  },
+  methods: {
+    currencyForGraphWasSelected(currencyId) {
+      this.currencyId = currencyId;
+    },
+  },
+};
+</script>
+
+<style scoped>
+.converter_wrapper {
+  background-color: #fedd9e;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
