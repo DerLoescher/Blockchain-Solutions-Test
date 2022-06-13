@@ -1,4 +1,4 @@
-# cryptocon
+# Crypto-converter and crypto-wallet
 
 ## Project setup
 ```
