@@ -34,9 +34,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .converter_wrapper {
-  background-color: #fedd9e;
+  background-color: $main-color;
   width: 100%;
   height: 100%;
   margin: 0;

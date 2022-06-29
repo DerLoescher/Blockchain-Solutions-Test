@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .selector {
   display: flex;
   justify-content: flex-end;
@@ -38,7 +38,7 @@ export default {
   margin: 10px;
 }
 .select_btn {
-  background: #ffd596;
+  background: $btn-secondary-color;
   border-radius: 10px;
   width: 50px;
   height: 20px;

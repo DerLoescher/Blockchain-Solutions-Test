@@ -5,8 +5,12 @@ import Wallet from "../src/components/wallet/Wallet";
 const routes = [
   {
     path: "/",
+    redirect: "/converter",
+  },
+  {
+    path: "/converter",
     component: Converter,
-    name: "main",
+    name: "converter",
   },
   {
     path: "/wallet",

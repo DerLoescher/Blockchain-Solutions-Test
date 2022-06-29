@@ -127,11 +127,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .converter {
   background: #fefefe;
   border-radius: 10px;
-  border: #fff1d5 solid 10px;
+  border: $secondary-color solid 10px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -154,7 +154,7 @@ export default {
   }
 }
 .select_btn {
-  background: #ffd596;
+  background: $btn-secondary-color;
   border-radius: 10px;
   width: 50px;
   height: 20px;
@@ -179,7 +179,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 10px;
 }
 .swap_button:active {
-  border: #ffd596 solid 3px;
+  border: $btn-secondary-color solid 3px;
 }
 .swap_button:hover {
   opacity: 60%;
@@ -218,13 +218,13 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 .result_button:active {
-  background: #ffd596;
+  background: $btn-secondary-color;
 }
 p {
   margin: 5px;
 }
 button {
-  background: #ffbc57;
+  background: $btn-main-color;
   border-radius: 10px;
 }
 </style>

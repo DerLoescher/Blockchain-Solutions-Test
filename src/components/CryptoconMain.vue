@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .cryptocon_wrapper {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   height: 100%;

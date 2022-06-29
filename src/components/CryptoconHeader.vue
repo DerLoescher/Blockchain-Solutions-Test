@@ -19,9 +19,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header_wrapper {
-  background-color: #fff1d5;
+  background-color: $secondary-color;
   width: 100%;
   height: 9%;
   display: flex;

@@ -91,9 +91,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .wallet_wrapper {
-  background-color: #fedd9e;
+  background-color: $main-color;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -135,7 +135,7 @@ export default {
   width: 100%;
 }
 .amount_wallet {
-  background: #fff1d5;
+  background: $secondary-color;
   padding: 2%;
   border-radius: 5px;
 }
@@ -148,7 +148,7 @@ export default {
   border-radius: 3px;
 }
 .currencies_list {
-  background: #fff1d5;
+  background: $secondary-color;
   border-radius: 10px;
   min-width: 100%;
   padding: 10px;
