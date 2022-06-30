@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+
+@font-face {
+    font-family: 'Concert One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/concert-one-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/concert-one-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/concert-one-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/concert-one-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/concert-one-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/concert-one-v17-latin-regular.svg#ConcertOne') format('svg'); /* Legacy iOS */
+  }
+
+  /* baloo-2-regular - latin */
+@font-face {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/baloo-2-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/baloo-2-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/baloo-2-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/baloo-2-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/baloo-2-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/baloo-2-v14-latin-regular.svg#Baloo2') format('svg'); /* Legacy iOS */
+  }
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Concert One';
+    font-weight: 400;
+  }
+  body {
+    height: 100vh;
+  }
+  #app {
+    height: 100%;
+    width: 100%;
+  }
+  .app {
+    height: 100%;
+    width: 100%;
+  }
+  

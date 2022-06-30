@@ -129,7 +129,7 @@ export default {
 
 <style lang="scss" scoped>
 .converter {
-  background: #fefefe;
+  background: $bg-color;
   border-radius: 10px;
   border: $secondary-color solid 10px;
   width: 60%;
@@ -147,12 +147,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
-  .selectors {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 .select_btn {
   background: $btn-secondary-color;
   border-radius: 10px;
@@ -169,6 +164,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .coin_input {
   height: 20px;
   margin-bottom: 10px;
+  @extend %input-style;
 }
 .swap_button {
   background: url(../../assets/swap_pic.svg) 50% 50% no-repeat;
@@ -177,6 +173,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
+  border-radius: 10px;
 }
 .swap_button:active {
   border: $btn-secondary-color solid 3px;
@@ -189,11 +186,21 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: column;
   margin: 10px;
 }
+.buttons {
+  display: flex;
+}
 .input_display {
   font-size: 16px;
 }
 .converted_value {
   font-size: 30px;
+}
+.result_button {
+  height: 20px;
+  width: 100px;
+  margin: 5px;
+  @extend %btn-style;
+  border-radius: 10px;
 }
 @media screen and (max-width: 850px) {
   .input_display {
@@ -207,24 +214,22 @@ input[type="number"]::-webkit-inner-spin-button {
   .swap_button {
     height: 50px;
   }
+  .selectors {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    flex-direction: column;
+  }
 }
-.result_button {
-  height: 20px;
-  width: 100px;
-  margin: 5px;
+@media screen and (max-width: 500px) {
+  .converted_value {
+    font-size: 15px;
+  }
 }
-.result_button:hover {
-  opacity: 60%;
-  cursor: pointer;
-}
-.result_button:active {
-  background: $btn-secondary-color;
-}
-p {
-  margin: 5px;
-}
-button {
-  background: $btn-main-color;
-  border-radius: 10px;
+@media screen and (max-width: 350px) {
+  .converted_value {
+    font-size: 11px;
+  }
 }
 </style>

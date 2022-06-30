@@ -5,8 +5,8 @@
     :dataset-id-key="datasetIdKey"
     :plugins="plugins"
     :styles="styles"
-    :width="width"
-    :height="height"
+    :width="this.width"
+    :height="this.height"
   />
 </template>
 
@@ -39,15 +39,6 @@ export default {
       type: String,
       default: "label",
     },
-    width: {
-      type: Number,
-      default: 700,
-    },
-    height: {
-      type: Number,
-      default: 300,
-    },
-
     styles: {
       type: Object,
       default: () => {},
@@ -66,6 +57,15 @@ export default {
     };
   },
   computed: {
+    height() {
+      let h = 300;
+
+      return h;
+    },
+    width() {
+      let w = 700;
+      return w;
+    },
     chartData() {
       return {
         labels: [

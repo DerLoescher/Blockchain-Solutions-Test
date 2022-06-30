@@ -1,0 +1,25 @@
+$main-color: #fedd9e;
+$secondary-color:#fff1d5;
+$bg-color: #fefefe;
+$btn-main-color: #ffbc57;
+$btn-secondary-color:#ffd596;
+%btn-style {
+    background: $btn-main-color;
+    font-family: 'Baloo 2';
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    &:hover {
+        opacity: 60%;
+  cursor: pointer;
+    }
+    &:active {
+        background: $btn-secondary-color;
+    }
+}
+%input-style {
+    border: black 2px solid;
+    border-radius: 3px;
+}

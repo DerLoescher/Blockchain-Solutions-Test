@@ -4,6 +4,7 @@
       @currencyForGraphWasSelected="currencyForGraphWasSelected"
     />
     <BarChart
+      class="bar_chart"
       v-if="currencyId"
       :selectedRatios="selectedRatios"
       :currencyId="this.currencyId"
@@ -43,5 +44,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.bar_chart {
+  width: 90%;
+  height: 100%;
 }
 </style>

@@ -30,10 +30,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .currency_item {
   min-width: 20px;
-  background: #fefefe;
+  background: $bg-color;
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
@@ -50,14 +50,6 @@ export default {
   width: 50px;
   height: 30px;
   margin: 5px;
-  background: #ffbc57;
-  border-radius: 10px;
-}
-.buy_btn:hover {
-  opacity: 60%;
-  cursor: pointer;
-}
-.buy_btn:active {
-  background: #ffd596;
+  @extend %btn-style;
 }
 </style>

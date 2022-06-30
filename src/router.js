@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/converter",
     component: Converter,
-    name: "converter",
+    name: "crypto converter",
   },
   {
     path: "/wallet",

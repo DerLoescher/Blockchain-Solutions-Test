@@ -103,11 +103,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
 }
-@media screen and (max-width: 1030px) {
-  .wallet_wrapper {
-    flex-direction: column;
-  }
-}
+
 .wallet {
   align-self: flex-start;
   margin-right: 12%;
@@ -119,6 +115,9 @@ export default {
   font-weight: bold;
 }
 .currency_shop {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
   align-self: center;
   width: 30%;
   display: flex;
@@ -126,11 +125,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 700px) {
-  .currency_shop {
-    width: 60%;
-  }
-}
+
 .amount {
   width: 100%;
 }
@@ -144,13 +139,30 @@ export default {
   padding: 5px;
   width: 60%;
   height: 30px;
-  border: black 2px solid;
-  border-radius: 3px;
+  @extend %input-style;
 }
 .currencies_list {
   background: $secondary-color;
   border-radius: 10px;
   min-width: 100%;
   padding: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .currency_shop {
+    width: 60%;
+  }
+  .wallet_wrapper {
+    flex-direction: column;
+  }
+  .wallet {
+    align-self: center;
+    margin-right: 0;
+  }
+  .currency_shop {
+    position: static;
+    right: 0%;
+    transform: translateX(0%);
+  }
 }
 </style>
