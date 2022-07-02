@@ -46,7 +46,7 @@ export default {
   align-items: center;
 }
 .bar_chart {
-  width: 90%;
+  width: 75%;
   height: 100%;
 }
 </style>
