@@ -49,4 +49,9 @@ export default {
   width: 75%;
   height: 100%;
 }
+@media screen and (max-width: 600px) {
+  .bar_chart {
+    width: 98%;
+  }
+}
 </style>
